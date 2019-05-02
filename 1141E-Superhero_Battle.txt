@@ -1,0 +1,52 @@
+//1141E
+import java.util.*;
+import java.lang.*;
+
+public class bossDamage{
+	public static void main(String [] args){
+		Scanner skn = new Scanner(System.in);
+		String monster = skn.nextLine();
+		String atk = skn.nextLine();
+		System.out.print(enterG(monster, atk));
+		System.exit(0);
+	}
+	public static int enterG(String hP, String atp){
+	   int[] lP = breakUp(hP);
+	   int[] atk = breakUp(atp);
+	   int tot = summing(atk);
+	   if(tot<0){
+	      return tCnt(lP, atk);
+	   }
+	   else
+	      return -1;
+	}
+	public static int[] breakUp(String hold){
+	   String[] temp = hold.split(" ");
+	   int[] numb = new int[temp.length];
+		for(int c=0; c<temp.length; c++){
+			numb[c] = Integer.parseInt(temp[c]);
+		}
+		return numb;
+	}
+	public static int summing(int[] tm){
+	   int x = 0;
+	   for(int g = 0; g<tm.length; g++){
+	      x += tm[g];
+	   }
+	   return x;
+	}
+	public static int tCnt(int[] stat, int[] hits){
+		int Hp = stat[0];
+		int minutes = 0;
+		while(Hp>0){
+		   for(int h = 0; h<stat[1]; h++){
+		      Hp+= hits[h];
+		      minutes++;
+		      if(Hp<0){
+		         break;
+		      }
+		   }
+		}
+		return minutes;
+	}
+}
