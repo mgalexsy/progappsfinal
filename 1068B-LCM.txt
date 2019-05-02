@@ -1,0 +1,21 @@
+ import java.util.Scanner;
+
+public class 1068B-LCM {
+	public static void main (String args[])
+	{
+		Scanner cin =new Scanner(System.in);
+		long b = cin.nextLong();
+		int ans = 0;
+		
+		for(int i=1;i<Math.sqrt(b+1);i++)
+			if(b%i==0)
+			{
+				ans += 2;
+				if(b/i==i) 
+					ans--;
+			}
+
+		System.out.println(ans);
+		cin.close();
+	}
+}
