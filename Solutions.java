@@ -165,13 +165,14 @@ public class CompiledCodes{
 
 
 
-public class Dice Rolling {
-	int n = s.nextInt();
-	for (int i = 0; i < n; i++) {
-	int goal = s.nextInt();
-	
-	System.out.println(goal / 2);
-	}
+public int rollingDice(int n, int goal) {
+        Random s = null;
+        n = s.nextInt();
+        for (int i = 0; i < n; i++) {
+            goal = s.nextInt();
+        }
+        return goal / 2;
+    }
 
 
 public class 1077A {
@@ -269,29 +270,28 @@ public class 1068B-LCM {
 	}
 }
 
-public class ThanosNim {
-    public static void main(String[] args) {
-        Scanner kbd = new Scanner(System.in);
-        int n = kbd.nextInt();
-        int[] a = new int[n];
-        int min = 51;
-        for (int i = 0; i < n; i++) {
-            a[i] = kbd.nextInt();
-            min = Math.min(min, a[i]);
-        }
-        int minCount = 0;
-        for (int i = 0; i < n; i++) {
-            if (a[i] == min) {
-                minCount++;
-            }
-        }
-        if (minCount <= n / 2) {
-            System.out.println("Alice");
-        } else {
-            System.out.println("Bob");
-        }
+public String ThanosNim (int n, int[] a, int min, int minCount){
+       Scanner kbd = new Scanner(System.in);
+       n = kbd.nextInt();
+       a = new int[n];
+       min = 51;
+       minCount = 0;
+       for (int i = 0; i < n; i++) {
+           a[i] = kbd.nextInt();
+           min = Math.min(min, a[i]);
+       }
+       for (int i = 0; i < n; i++) {
+           if (a[i] == min) {
+               minCount++;
+           }
+       }
+       if (minCount <= n / 2) {
+           return "Alice";
+       } else {
+           return "bob";
+       }
 
-    }
+}
 }
 	
 	
