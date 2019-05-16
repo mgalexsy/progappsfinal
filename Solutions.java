@@ -209,6 +209,22 @@ public class 1077A {
 }
 <<<<<<< .mine
 
+
+public class Main{
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        while(n-- > 0) {
+            int a = scan.nextInt();
+            System.out.println((int)Math.pow(2, Integer.bitCount(a)));
+        }
+    }
+
+||||||| .r13
+=======
+<<<<<<< .mine
+
 }
 ||||||| .r13
 =======
@@ -306,3 +322,4 @@ public class 1089L {
 
 }
 >>>>>>> .r15
+>>>>>>> .r16
