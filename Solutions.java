@@ -183,6 +183,16 @@ public class CompiledCodes{
     return result;
   }
 
+<<<<<<< .mine
+public class Dice Rolling {
+	int n = s.nextInt();
+	for (int i = 0; i < n; i++) {
+	int goal = s.nextInt();
+	
+	System.out.println(goal / 2);
+	}
+||||||| .r13
+=======
 public class 1077A {
 	public static void main(String[] args) {
 		Scanner scanny = new Scanner(System.in);
@@ -195,7 +205,13 @@ public class 1077A {
 			else System.out.println((r-l)*((y-1)/2)+r);
 		}
 	}
+>>>>>>> .r15
 }
+<<<<<<< .mine
+
+}
+||||||| .r13
+=======
 
 public class 1089L {
     public  static  void  main(String[]args) throws IOException {
@@ -289,3 +305,4 @@ public class 1089L {
 
 
 }
+>>>>>>> .r15
