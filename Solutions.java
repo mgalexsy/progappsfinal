@@ -182,6 +182,17 @@ public class CompiledCodes{
     result = max - min;
     return result;
   }
+  public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int t,r,l;
+		t = sc.nextInt();
+		for(;t>0;t-=1) {
+			r = sc.nextInt();
+			l = sc.nextInt();
+			System.out.println(r+" "+2*r);
+		}
+		sc.close();
+	}
 
 <<<<<<< .mine
 public class Dice Rolling {
