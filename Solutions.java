@@ -139,7 +139,7 @@ public class CompiledCodes{
 		sc.close();
 	}
 
-<<<<<<< .mine
+
   public static int servalAndBus (int n, int t, int mi){
       Scanner scanner = new Scanner(System.in);
       n = scanner.nextInt();
@@ -164,9 +164,7 @@ public class CompiledCodes{
  }
 
 
-||||||| .r13
-=======
-<<<<<<< .mine
+
 public class Dice Rolling {
 	int n = s.nextInt();
 	for (int i = 0; i < n; i++) {
@@ -174,8 +172,8 @@ public class Dice Rolling {
 	
 	System.out.println(goal / 2);
 	}
-||||||| .r13
-=======
+
+
 public class 1077A {
 	public static void main(String[] args) {
 		Scanner scanny = new Scanner(System.in);
@@ -188,10 +186,9 @@ public class 1077A {
 			else System.out.println((r-l)*((y-1)/2)+r);
 		}
 	}
->>>>>>> .r15
->>>>>>> .r19
+
 }
-<<<<<<< .mine
+
 	/**
 	* A method called SuperHeroBattle
 	* @param healthStat is the health of the monster and the number of heroes, attacks are the damage dealt by the heroes in a 1 hero per minute to attack
@@ -236,10 +233,7 @@ public class 1077A {
 		}
 		return minutes;
 	}
-||||||| .r14
-=======
-<<<<<<< .mine
->>>>>>> .r20
+
 
 
 public class Main{
@@ -253,114 +247,7 @@ public class Main{
         }
     }
 
-<<<<<<< .mine
-||||||| .r14
-
-=======
-||||||| .r13
-=======
-<<<<<<< .mine
-
->>>>>>> .r20
 }
-||||||| .r13
-=======
-
-public class 1089L {
-    public  static  void  main(String[]args) throws IOException {
-        Scanner sc = new Scanner(System.in);
-        PrintWriter pw = new PrintWriter(System.out);
-        int n =sc.nextInt();
-        int k = sc.nextInt();
-        int[]p = new int[n];
-        int []job = new int[k+1];
-        for (int i =0;i<n;i++){
-            p[i]= sc.nextInt();
-        }
-        PriorityQueue<Integer>pq = new PriorityQueue<>();
-        for (int i=0;i<n;i++){
-            int b = sc.nextInt();
-            if (job[p[i]]==0)job[p[i]]=b;
-            else{
-                if (job[p[i]]<b){
-                    pq.add(job[p[i]]);
-                    job[p[i]]=b;
-                }
-                else pq.add(b);
-            }
-        }
-        int x =0;
-        for (int i=1;i<k+1;i++){
-            if (job[i]==0)x++;
-        }
-        long sum=0;
-        while (x-->0){
-            sum+=pq.poll();
-        }
-        pw.println(sum);
-        pw.flush();
-    }
-    static class Scanner
-    {
-        StringTokenizer st;
-        BufferedReader br;
-
-        public Scanner(InputStream s){	br = new BufferedReader(new InputStreamReader(s));}
-
-        public String next() throws IOException
-        {
-            while (st == null || !st.hasMoreTokens())
-                st = new StringTokenizer(br.readLine());
-            return st.nextToken();
-        }
-
-        public int nextInt() throws IOException {return Integer.parseInt(next());}
-
-        public long nextLong() throws IOException {return Long.parseLong(next());}
-
-        public String nextLine() throws IOException {return br.readLine();}
-
-        public double nextDouble() throws IOException
-        {
-            String x = next();
-            StringBuilder sb = new StringBuilder("0");
-            double res = 0, f = 1;
-            boolean dec = false, neg = false;
-            int start = 0;
-            if(x.charAt(0) == '-')
-            {
-                neg = true;
-                start++;
-            }
-            for(int i = start; i < x.length(); i++)
-                if(x.charAt(i) == '.')
-                {
-                    res = Long.parseLong(sb.toString());
-                    sb = new StringBuilder("0");
-                    dec = true;
-                }
-                else
-                {
-                    sb.append(x.charAt(i));
-                    if(dec)
-                        f *= 10;
-                }
-            res += Long.parseLong(sb.toString()) / f;
-            return res * (neg?-1:1);
-        }
-
-        public boolean ready() throws IOException {return br.ready();}
-
-
-    }
-}
-
-
-
-}
-
-
- import java.util.Scanner;
 
 public class 1068B-LCM {
 	public static void main (String args[])
@@ -381,5 +268,30 @@ public class 1068B-LCM {
 		cin.close();
 	}
 }
->>>>>>> .r15
->>>>>>> .r16
+
+public class ThanosNim {
+    public static void main(String[] args) {
+        Scanner kbd = new Scanner(System.in);
+        int n = kbd.nextInt();
+        int[] a = new int[n];
+        int min = 51;
+        for (int i = 0; i < n; i++) {
+            a[i] = kbd.nextInt();
+            min = Math.min(min, a[i]);
+        }
+        int minCount = 0;
+        for (int i = 0; i < n; i++) {
+            if (a[i] == min) {
+                minCount++;
+            }
+        }
+        if (minCount <= n / 2) {
+            System.out.println("Alice");
+        } else {
+            System.out.println("Bob");
+        }
+
+    }
+}
+	
+	
