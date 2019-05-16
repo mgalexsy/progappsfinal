@@ -192,6 +192,54 @@ public class 1077A {
 >>>>>>> .r19
 }
 <<<<<<< .mine
+	/**
+	* A method called SuperHeroBattle
+	* @param healthStat is the health of the monster and the number of heroes, attacks are the damage dealt by the heroes in a 1 hero per minute to attack
+	* @return result shows the number of minutes for the monster's health to be 0 or -1 when the heroes can not defeat the monster
+	*/
+	public static int enterGame(String healthStat, String attacks) {
+	   int[] LifePoint = breakUp(HealthStat);
+	   int[] DMG = breakUp(attacks);
+	   int tot = summing(DMG);
+	   if(tot<0){
+	      return timeConut(LifePoint, DMG);
+	   }
+	   else
+	      return -1;
+	}
+	public static int[] breakUp(String hold) {
+	   String[] temp = hold.split(" ");
+	   int[] number = new int[temp.length];
+		for(int j=0; j<temp.length; j++) {
+			number[j] = Integer.parseInt(temp[j]);
+		}
+		return number;
+	}
+	public static int summing(int[] tm) {
+	   int Total = 0;
+	   for(int g = 0; g<tm.length; g++) {
+	      Total += tm[g];
+	   }
+	   return Total;
+	}
+	public static int timeConut(int[] stat, int[] hits) {
+		int Hp = stat[0];
+		int minutes = 0;
+		while(Hp>0) {
+		   for(int k = 0; k<stat[1]; k++) {
+		      Hp += hits[k];
+		      minutes++;
+		      if(Hp<0){
+		         break;
+		      }
+		   }
+		}
+		return minutes;
+	}
+||||||| .r14
+=======
+<<<<<<< .mine
+>>>>>>> .r20
 
 
 public class Main{
@@ -205,10 +253,15 @@ public class Main{
         }
     }
 
+<<<<<<< .mine
+||||||| .r14
+
+=======
 ||||||| .r13
 =======
 <<<<<<< .mine
 
+>>>>>>> .r20
 }
 ||||||| .r13
 =======
