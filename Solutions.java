@@ -2,14 +2,6 @@ import java.util.*;
 import java.io.*;
 
 public class CompiledCodes{
-	
-	/**
-	* A method called tribonacci
-	* @param s initialized as a double array 
-	* @param n initialized for the for loop that also contains a conditional statement
-	* @return tribArray returns the result of the for loop
-	*/
-
   public static double[] tribonacci(double[] s, int n) {
 	      double[] tribArray = new double[n];
 	        for(int i = 0; i<tribArray.length;i++) {
@@ -22,11 +14,6 @@ public class CompiledCodes{
 	        return  tribArray;
 	}
 	
-	/**
-	* A method called duplicateCount
-	* @param text initialized as a string that takes a String of lowercase and splits them
-	* @return countDupes returns the size 
-	*/
 
   public static int duplicateCount(String text) {
         String[] allLowerCase = text.toLowerCase().split("");
@@ -43,12 +30,6 @@ public class CompiledCodes{
 
   }
   
-  /**
-	* A method called getXO
-	* @param str a variable for the String class which used in a loop to determine the length and type of letter
-	* @return x returns x if equal to o
-	*/
-
   public static boolean getXO (String str) {
     int x = 0;
     int o = 0;
@@ -63,27 +44,17 @@ public class CompiledCodes{
       return x == o;
   }
 
-	/**
-	* A method called findUniq
-	* @param arr declared as an array to test each node in the array to find the unique number
-	* @return arr returns the output
-	*/
-
   public static double findUniq(double arr[]) {
     for(int i = 0; i < arr.length; i++){
       double firstNum = arr[i];
       double secondNum = arr[i+1];
       double thirdNum = arr[i+2];
-
-      //test if secondNum is the unique number
       if(firstNum != secondNum && firstNum == thirdNum){
         arr[0] = secondNum;
-        break;
-      //test if thirdNum is the unique number
+        break;  
       }else if(firstNum == secondNum && firstNum != thirdNum){
         arr[0] = thirdNum;
-        break;
-      //test if firstNum is the unique number
+        break;  
       }else if(firstNum != secondNum && firstNum != thirdNum && secondNum == thirdNum){
         arr[0] = firstNum;
         break;
@@ -91,13 +62,6 @@ public class CompiledCodes{
     }
       return arr[0];
   }
-
-	/**
-	* A method called TripleDouble
-	* @param num1 converts the long data type into a string
-	* @param num2 converts the long data type into a string
-	* @return 0 is what the method returns
-	*/
 
   public static int TripleDouble(long num1, long num2){
         String number1 = Long.toString(num1);
@@ -116,13 +80,6 @@ public class CompiledCodes{
               return  0;
   }
   
-  /**
-	* A method called checkSecond
-	* @param num2 long is converted to a String 
-	* @param target A String that is used here for comparing strings 
-	* @return true returns true or
-	* @return false returns false
-	*/
   
   public static boolean checkSecond(long num2,String target){
       String num = Long.toString(num2);
@@ -138,12 +95,6 @@ public class CompiledCodes{
       }
   }
   
-  /**
-	* A method called summation
-	* @param n serves as the variable in the for loop to how many times it will iterate
-	* @return total returns the total count
-	*/
-
   public static int summation(int n) {
     int total = 1;
     for (int count = 2; count <= n; count ++) {
@@ -159,13 +110,7 @@ public class CompiledCodes{
     }
       return total;
   }
-
-	/**
-	* A method called betweenExtremes
-	* @param numbers instantiated as an array for the variables max and min
-	* @return result returns the result of max - min
-	*/
-
+	
   public static int betweenExtremes(int[] numbers){
     int result = 0;
     int max = numbers[0];
@@ -195,6 +140,33 @@ public class CompiledCodes{
 	}
 
 <<<<<<< .mine
+  public static int servalAndBus (int n, int t, int mi){
+      Scanner scanner = new Scanner(System.in);
+      n = scanner.nextInt();
+      t = scanner.nextInt();
+      mi = Integer.MAX_VALUE;
+      int result = -1;
+      for (int i = 0; i < n; i++) {
+          int a = scanner.nextInt();
+          int b = scanner.nextInt();
+          if (a < t) {
+             int x = (t - a + b - 1) / b;
+             a = a + x * b;
+          }
+          if (a < mi) {
+             mi = a;
+             result = i + 1;
+          }
+     }
+     return result;
+
+ 
+ }
+
+
+||||||| .r13
+=======
+<<<<<<< .mine
 public class Dice Rolling {
 	int n = s.nextInt();
 	for (int i = 0; i < n; i++) {
@@ -217,6 +189,7 @@ public class 1077A {
 		}
 	}
 >>>>>>> .r15
+>>>>>>> .r19
 }
 <<<<<<< .mine
 
