@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public int servalAndBus (int n, int t, int mi){
+public int getServalAndBus (int n, int t, int mi){
       Scanner scanner = new Scanner(System.in);
       n = scanner.nextInt();
       t = scanner.nextInt();
@@ -17,6 +17,6 @@ public int servalAndBus (int n, int t, int mi){
              mi = a;
              result = i + 1;
           }
-     }
-     return result;
+      }
+      return result;
 }
