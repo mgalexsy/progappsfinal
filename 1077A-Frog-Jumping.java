@@ -1,10 +1,10 @@
 public int jumpingFrog(int r, int l, int y)  {
-		Scanner scanny = new Scanner(System.in);
-		int x = scanny.nextInt();
+		Scanner scanner = new Scanner(System.in);
+		int x = scanner.nextInt();
 		for(int i = 0; i < x; i++) {
-		   r = scanny.nextInt();
-			l = scanny.nextInt();
-			y = scanny.nextInt();
+		   r = scanner.nextInt();
+			l = scanner.nextInt();
+			y = scanner.nextInt();
 		}
       if(y%2==0) {
          return ((r-l)*(y/2));
