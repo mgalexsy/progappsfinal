@@ -15,3 +15,15 @@ public int jumpingFrog(int r, int l, int y)  {
         }
 
 }
+
+//Siababa
+public class Solutions{
+    public int get (int firstNum, int secondNum){
+
+        Scanner scan = new Scanner(System.in);
+        firstNum = scan.nextInt();
+        while(firstNum-- > 0) {
+             secondNum = scan.nextInt();
+        }
+        return ((int)Math.pow(2, Integer.bitCount(secondNum)));
+    }
