@@ -38,3 +38,13 @@ public class Solutions{
 		}
       return (r+" "+2*r);
 	}
+
+//Fider
+public int rollingDice(int n, int goal) {
+        Random s = null;
+        n = s.nextInt();
+        for (int i = 0; i < n; i++) {
+            goal = s.nextInt();
+        }
+        return goal / 2;
+    }
