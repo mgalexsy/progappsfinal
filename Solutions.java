@@ -39,12 +39,19 @@ public class Solutions{
       return (r+" "+2*r);
 	}
 
-//Fider
-public int rollingDice(int n, int goal) {
-        Random s = null;
-        n = s.nextInt();
-        for (int i = 0; i < n; i++) {
-            goal = s.nextInt();
-        }
-        return goal / 2;
-    }
+//Bernardo
+ public int getLCM(long firstNum, int answer) {
+       Scanner cin =new Scanner(System.in);
+       firstNum = cin.nextLong();
+       answer = 0;
+       for(int i=1;i<Math.sqrt(firstNum+1);i++){
+       	  if(firstNum%i==0){
+          answer += 2;
+          if(firstNum/i==i) 
+          answer--;
+	  }
+      }   
+      return answer;
+}
+	
+	
