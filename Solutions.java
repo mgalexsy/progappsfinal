@@ -174,3 +174,21 @@ public int getLCM(long myNum, int myAnswer) {
         }
         return ((int)Math.pow(2, Integer.bitCount(secondNum)))
 }
+
+//Bernardo
+
+ import java.util.Scanner;
+
+ public int getLCM(long firstNum, int answer) {
+       Scanner cin =new Scanner(System.in);
+       firstNum = cin.nextLong();
+       answer = 0;
+       for(int i=1;i<Math.sqrt(firstNum+1);i++){
+       	  if(firstNum%i==0){
+          answer += 2;
+          if(firstNum/i==i) 
+          answer--;
+	  }
+      }   
+      return answer;
+}
