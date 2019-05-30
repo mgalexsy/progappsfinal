@@ -1,23 +1,20 @@
-import java.util.Scanner;
-public class 1165A {
+public int getRemainder (){
+        	Scanner sc=new Scanner(System.in);
+        	int firstInput=sc.nextInt();
+        	int secondInput=sc.nextInt();
+        	int thirdInput=sc.nextInt();
+        	String oneOrZero =sc.next();
+        	int count=0;
+        	for(int i=firstInput-secondInput;i<firstInput;i++) {
+            		if(i==firstInput-thirdInput-1) {
+                		if(oneOrZero.charAt(i)!='1') {
+                    			count++;
+                		}
+            		}
+            		else if(oneOrZero.charAt(i)=='1') {
+                		count++;
+            		}
+        	}
 
-	public static void main(String args[]) {
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		int x=sc.nextInt();
-		int y=sc.nextInt();
-		String st=sc.next();
-		int count=0;
-		for(int i=n-x;i<n;i++) {
-			if(i==n-y-1) {
-				if(st.charAt(i)!='1') {
-					count++;
-				}
-			}
-			else if(st.charAt(i)=='1') {
-				count++;
-			}
-		}
-		System.out.println(count);
-	}
-}
+        	return count;
+    	}
