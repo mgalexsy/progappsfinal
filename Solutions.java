@@ -21,16 +21,7 @@ public class Solutions {
            	   return ((firstJump-secondJump)*((thirdJump-secondJump)/2)+firstJump);
            }
    }
-	//Siababa
-    	public int get (int firstNum, int secondNum){
-        	Scanner scan = new Scanner(System.in);
-        	firstNum = scan.nextInt();
-        	while(firstNum-- > 0) {
-             	     secondNum = scan.nextInt();
-        	}
-        	return ((int)Math.pow(2, Integer.bitCount(secondNum)));
-    }
-	
+
   	//Fernandez
 	public String getDivisible(int t, int r, int l) {
 		Scanner sc = new Scanner(System.in);
@@ -57,102 +48,53 @@ public class Solutions {
         	return answer;
 	}
 	//Soriano
-	public int getBusRoute (int busRoutes, int time, int mi){
+	public int getBusRoute (){
       		Scanner scanner = new Scanner(System.in);
-      		busRoutes = scanner.nextInt();
+      		int busRoutes;
+                int time;
+                int maxInteger;
+                int n = 0;
+                busRoutes = scanner.nextInt();
      	 	time = scanner.nextInt();
-     		mi = Integer.MAX_VALUE;
-      		int result = -1;
+     		maxInteger = Integer.MAX_VALUE;
+      		int result;
+                 result = -1;
       		for (int i = 0; i < n; i++) {
           	    int a = scanner.nextInt();
                     int b = scanner.nextInt();
+                          int t = 0;
                     if (a < t) {
                     	int x = (time - a + b - 1) / b;
                     	a = a + x * b;
                     }
-          	    if (a < mi) {
-                   	mi = a;
-                   	result = i + 1;
-                    }
+          	    if (maxInteger < a) {
+                    } else {
+                        maxInteger = a;
+                        result = i + 1;
+                          }
       		}
       		return result;
       }
 
 	   //Cayadi
-    public String ThanosNim (int n, int[] a, int b, int minCount){
-       Scanner kbd = new Scanner(System.in);
-       n = kbd.nextInt();
-       a = new int[n];
-       b = 51;
-       minCount = 0;
-       for (int i = 0; i < n; i++) {
-           a[i] = kbd.nextInt();
-           b = Math.b(b, a[i]);
-       }
-       for (int i = 0; i < n; i++) {
-           if (a[i] == b) {
-               minCount++;
-           }
-       }
-       if (minCount <= n / 2) {
-           return "Alice";
-       } else {
-           return "bob";
-       }
 
-  }
-}
+
 	
 	//Fider
 
 public int rollingDice() {
         Random integer = null;
 	int num = 0;
-	int goal = 0;
-        n = integer.nextInt();
-        for (int num = 0; i < n; num++) {
+        int goal = 0;
+        num = integer.nextInt();
+        for (int i = 0; i < num; i++) {
             goal = integer.nextInt();
         }
         return goal / 2;
     }
 
-	//Siababa
-	public int get (int firstNum, int secondNum){
-
-		secondNum = GetInteger(secondNum);
-		return ((int)Math.pow(2, Integer.bitCount(secondNum)));
-	    }
-
-	    public int GetInteger(int mysecondNum) {
-		int myfirstNum;
-		Scanner scan = new Scanner(System.in);
-		myfirstNum = scan.nextInt();
-		while(myfirstNum-- > 0) {
-		    mysecondNum = scan.nextInt();
-		}
-		return mysecondNum;
-	    }
-
-	}
-
-	//Bernardo
-	public int getLCM(long myNum, int myAnswer) {
-			Scanner kbd =new Scanner(System.in);
-			myNum = kbd.nextLong();
-			myAnswer = 0;
-			return myMethod(myNum, myAnswer);
-		}
-
-	    private int myMethod(long myNum, int myAnswer) {
-		for(int i=1;i<Math.sqrt(myNum+1);i++){
-		    if(myNum%i==0){
-			myAnswer += 2;
-			if(myNum/i==i)
-			    myAnswer--;
-		    }
-		}
-		return myAnswer;
-	    }
+	
+	
 
 	//Siababa
 	 public int get (int firstNum, int secondNum){
@@ -162,14 +104,15 @@ public int rollingDice() {
 		while(firstNum-- > 0) {
 		     secondNum = scan.nextInt();
 		}
-		return ((int)Math.pow(2, Integer.bitCount(secondNum)))
+		return ((int)Math.pow(2, Integer.bitCount(secondNum)));
 	}
 
 	//Bernardo
 
-	 import java.util.Scanner;
-
-	 public int getLCM(long firstNum, int answer) {
+   
+    public int getLCM() {
+                long firstNum;
+                int answer;
 	       Scanner cin =new Scanner(System.in);
 	       firstNum = cin.nextLong();
 	       answer = 0;
@@ -184,7 +127,10 @@ public int rollingDice() {
 	}
 
 	//Fernandez
-	public String getDivisible(int firstNum, int secondNum, int thirdNum) {
+	public String getDivisible() {
+                int firstNum;
+                int secondNum = 0;
+                int thirdNum;
 		Scanner sc = new Scanner(System.in);
 		firstNum = sc.nextInt();
 		for(;firstNum>0;firstNum-=1) {
@@ -193,3 +139,5 @@ public int rollingDice() {
 		}
 		return (secondNum+" "+2*secondNum);
 	}
+
+}
