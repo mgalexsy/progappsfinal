@@ -22,31 +22,8 @@ public class Solutions {
            }
    }
 
-  	//Fernandez
-	public String getDivisible(int t, int r, int l) {
-		Scanner sc = new Scanner(System.in);
-		t = sc.nextInt();
-		for(;t>0;t-=1) {
-		   r = sc.nextInt();
-		   l = sc.nextInt();
-		}
-      		return (r+" "+2*r);
-	}
-
-	//Bernardo
-	public int getLCM(long firstNum, int answer) {
-        	Scanner cin =new Scanner(System.in);
-       		firstNum = cin.nextLong();
-        	answer = 0;
-       		for(int i=1;i<Math.sqrt(firstNum+1);i++){
-       	  	   if(firstNum%i==0){
-          	      answer += 2;
-          	   if(firstNum/i==i) 
-          	      answer--;
-	           }
-                }   
-        	return answer;
-	}
+  
+	
 	//Soriano
 	public int getBusRoute (){
       		Scanner scanner = new Scanner(System.in);
@@ -76,7 +53,7 @@ public class Solutions {
       		return result;
       }
 
-	   //Cayadi
+	
 
 
 	
@@ -139,7 +116,8 @@ public int rollingDice() {
 		}
 		return (secondNum+" "+2*secondNum);
 	}
-	
+
+
 	//Cayadi
 	public int getRemainder (){
         	Scanner sc=new Scanner(System.in);
@@ -161,5 +139,7 @@ public int rollingDice() {
 
         	return count;
     	}
+
+}
 
 }
