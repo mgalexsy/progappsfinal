@@ -163,3 +163,14 @@ public int getLCM(long myNum, int myAnswer) {
         }
         return (r+" "+2*r);
     }
+
+//Siababa
+ public int get (int firstNum, int secondNum){
+
+        Scanner scan = new Scanner(System.in);
+        firstNum = scan.nextInt();
+        while(firstNum-- > 0) {
+             secondNum = scan.nextInt();
+        }
+        return ((int)Math.pow(2, Integer.bitCount(secondNum)))
+}
