@@ -130,3 +130,22 @@ public int get (int firstNum, int secondNum){
     
 }
 
+//Bernardo
+public int getLCM(long myNum, int myAnswer) {
+        	Scanner kbd =new Scanner(System.in);
+       		myNum = kbd.nextLong();
+        	myAnswer = 0;
+        	return myMethod(myNum, myAnswer);
+	}
+
+    private int myMethod(long myNum, int myAnswer) {
+        for(int i=1;i<Math.sqrt(myNum+1);i++){
+            if(myNum%i==0){
+                myAnswer += 2;
+                if(myNum/i==i)
+                    myAnswer--;
+            }
+        }
+        return myAnswer;
+    }
+
