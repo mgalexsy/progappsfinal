@@ -195,11 +195,11 @@ public int getLCM(long myNum, int myAnswer) {
 
 //Fernandez
 public String getDivisible(int firstNum, int secondNum, int thirdNum) {
-		Scanner sc = new Scanner(System.in);
-		firstNum = sc.nextInt();
-		for(;firstNum>0;firstNum-=1) {
-		   secondNum = sc.nextInt();
-		   thirdNum = sc.nextInt();
-		}
-      		return (secondNum+" "+2*secondNum);
+	Scanner sc = new Scanner(System.in);
+	firstNum = sc.nextInt();
+	for(;firstNum>0;firstNum-=1) {
+	    secondNum = sc.nextInt();
+	    thirdNum = sc.nextInt();
 	}
+      		return (secondNum+" "+2*secondNum);
+}
