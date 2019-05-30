@@ -148,4 +148,18 @@ public int getLCM(long myNum, int myAnswer) {
         }
         return myAnswer;
     }
+//Fernandez
+ public String getDivisible(int t, int r, int l) {
+      		return isDivisible(t, r);
+    }
 
+    private String isDivisible(int t, int r) {
+        int l;
+        Scanner sc = new Scanner(System.in);
+        t = sc.nextInt();
+        for(;t>0;t-=1) {
+            r = sc.nextInt();
+            l = sc.nextInt();
+        }
+        return (r+" "+2*r);
+    }
