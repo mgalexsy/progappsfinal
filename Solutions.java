@@ -67,8 +67,9 @@ public int rollingDice() {
 	
 
 	//Siababa
-	 public int get (int firstNum, int secondNum){
-
+	 public int getEquations (){
+                int firstNum = 0;
+                int secondNum = 0;
 		Scanner scan = new Scanner(System.in);
 		firstNum = scan.nextInt();
 		while(firstNum-- > 0) {
@@ -134,5 +135,3 @@ public int rollingDice() {
     	}
 
 }
-
-
