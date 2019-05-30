@@ -3,8 +3,8 @@ public class Solutions {
 	//Alejo
 	public int jumpingFrog(int r, int l, int y)  {
 		Scanner scanner = new Scanner(System.in);
-		int number = scanner.nextInt();
-		for(int i = 0; i < number; i++) {
+		int numjumps = scanner.nextInt();
+		for(int i = 0; i < numjumps; i++) {
 	    	    r = scanner.nextInt();
 	    	    l = scanner.nextInt();
 	    	    y = scanner.nextInt();
