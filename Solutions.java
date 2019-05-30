@@ -38,7 +38,7 @@ public class Solutions {
       		return (r+" "+2*r);
 	}
 
-//Bernardo
+	//Bernardo
 	public int getLCM(long firstNum, int answer) {
         	Scanner cin =new Scanner(System.in);
        		firstNum = cin.nextLong();
@@ -53,7 +53,7 @@ public class Solutions {
         	return answer;
 	}
 	//Soriano
-	public int getServalAndBus (int busRoutes, int time, int mi){
+	public int getBusRoute (int busRoutes, int time, int mi){
       		Scanner scanner = new Scanner(System.in);
       		busRoutes = scanner.nextInt();
      	 	time = scanner.nextInt();
