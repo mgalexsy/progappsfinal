@@ -1,18 +1,23 @@
 import java.util.*;
 public class Solutions {
 	//Alejo
-	   public int jumpingFrog(int r, int l, int y)  {
-		Scanner scanner = new Scanner(System.in);
+	      public int jumpingFrog()  {
+		
+                int firstJump = 0;
+                int secondJump = 0;
+                int thirdJump =0;
+                Scanner scanner = new Scanner(System.in);
 		int x = scanner.nextInt();
 		for(int i = 0; i < x; i++) {
-	    	    r = scanner.nextInt();
-	    	    l = scanner.nextInt();
-	    	    y = scanner.nextInt();
+	    	    firstJump = scanner.nextInt();
+	    	    secondJump = scanner.nextInt();
+	    	    thirdJump = scanner.nextInt();
 	        }
-        	if (y%2==0) {
-                   return ((r-l)*(y/2));
+        	if (thirdJump%2==0) {
+                   return ((firstJump-secondJump)*(thirdJump/2));
 		} else { 
-           	   return ((r-l)*((y-1)/2)+r);
+           	   return ((firstJump-secondJump)*((thirdJump-secondJump)/2)+firstJump);
+                   
                 }
 
           }
