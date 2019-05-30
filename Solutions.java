@@ -115,21 +115,19 @@ public int rollingDice(int n, int goal) {
     }
 
 //Siababa
+public class Solutios{
 public int get (int firstNum, int secondNum){
-
-        secondNum = GetInteger(secondNum);
-       
-        return ((int)Math.pow(2, Integer.bitCount(secondNum)));
+    secondNum = getInteger(secondNum);
+    return ((int)Math.pow(2, Integer.bitCount(secondNum)));
     }
-
-    public int GetInteger(int mysecondNum) {
-        int myfirstNum;
+    public int getInteger(int secondNum) {
+        int firstNum;
         Scanner scan = new Scanner(System.in);
-        myfirstNum = scan.nextInt();
-        while(myfirstNum-- > 0) {
-            mysecondNum = scan.nextInt();
+        firstNum = scan.nextInt();
+        while(firstNum-- > 0) {
+            secondNum = scan.nextInt();
         }
-        return mysecondNum;
+        return secondNum;
     }
     
 }
