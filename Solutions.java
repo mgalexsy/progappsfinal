@@ -106,12 +106,12 @@ public class Solutions {
 	//Fider
 
 public int rollingDice() {
-        Random t = null;
-	int n = 0;
+        Random integer = null;
+	int one = 0;
 	int goal = 0;
-        n = s.nextInt();
-        for (int i = 0; i < n; i++) {
-            goal = s.nextInt();
+        n = integer.nextInt();
+        for (int i = 0; i < n; one++) {
+            goal = integer.nextInt();
         }
         return goal / 2;
     }
