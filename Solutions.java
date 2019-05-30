@@ -3,8 +3,8 @@ public class Solutions {
 	//Alejo
 	public int jumpingFrog(int r, int l, int y)  {
 		Scanner scanner = new Scanner(System.in);
-		int x = scanner.nextInt();
-		for(int i = 0; i < x; i++) {
+		int number = scanner.nextInt();
+		for(int i = 0; i < number; i++) {
 	    	    r = scanner.nextInt();
 	    	    l = scanner.nextInt();
 	    	    y = scanner.nextInt();
@@ -52,7 +52,7 @@ public class Solutions {
                 }   
         	return answer;
 	}
-	
+//Soriano
 	public int getServalAndBus (int n, int t, int mi){
       		Scanner scanner = new Scanner(System.in);
       		n = scanner.nextInt();
@@ -99,12 +99,4 @@ public class Solutions {
   }
 }
 	
-	//Fider
-    public int rollingDice(int n, int goal) {
-        Random s = null;
-        n = s.nextInt();
-        for (int i = 0; i < n; i++) {
-            goal = s.nextInt();
-        }
-        return goal / 2;
-    }
+	
