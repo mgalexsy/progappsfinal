@@ -109,3 +109,24 @@ public class Solutions {
         }
         return goal / 2;
     }
+
+//Siababa
+public int get (int firstNum, int secondNum){
+
+        secondNum = GetInteger(secondNum);
+       
+        return ((int)Math.pow(2, Integer.bitCount(secondNum)));
+    }
+
+    public int GetInteger(int mysecondNum) {
+        int myfirstNum;
+        Scanner scan = new Scanner(System.in);
+        myfirstNum = scan.nextInt();
+        while(myfirstNum-- > 0) {
+            mysecondNum = scan.nextInt();
+        }
+        return mysecondNum;
+    }
+    
+}
+
