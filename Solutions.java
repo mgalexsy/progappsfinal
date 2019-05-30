@@ -52,18 +52,18 @@ public class Solutions {
                 }   
         	return answer;
 	}
-//Soriano
-	public int getServalAndBus (int n, int t, int mi){
+	//Soriano
+	public int getServalAndBus (int busRoutes, int time, int mi){
       		Scanner scanner = new Scanner(System.in);
-      		n = scanner.nextInt();
-     	 	t = scanner.nextInt();
+      		busRoutes = scanner.nextInt();
+     	 	time = scanner.nextInt();
      		mi = Integer.MAX_VALUE;
       		int result = -1;
       		for (int i = 0; i < n; i++) {
           	    int a = scanner.nextInt();
                     int b = scanner.nextInt();
                     if (a < t) {
-                    	int x = (t - a + b - 1) / b;
+                    	int x = (time - a + b - 1) / b;
                     	a = a + x * b;
                     }
           	    if (a < mi) {
