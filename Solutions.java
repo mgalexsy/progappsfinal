@@ -3,7 +3,7 @@ public class Solutions {
 	//Alejo
 	    public int jumpingFrog(int a, int b, int c)  {
 		Scanner scanner = new Scanner(System.in);
-		int numjumps = scanner.nextInt();
+		int numjumps = numjumps(scanner);
 		for(int i = 0; i < numjumps; i++) {
 	    	    a = a(scanner);
 	    	    b = b(scanner);
@@ -12,6 +12,11 @@ public class Solutions {
         return forJumpingFrog(c, a, b);
 
           }
+
+    public int numjumps(Scanner scanner) {
+        int numjumps = scanner.nextInt();
+        return numjumps;
+    }
 
     public int c(Scanner scanner) {
         int c;
@@ -41,6 +46,8 @@ public class Solutions {
         } else {
             return ((a-b)*((c-b)/2)+a);
         }
+    }
+  
     }
   
 
