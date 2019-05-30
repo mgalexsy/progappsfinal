@@ -135,61 +135,61 @@ public int rollingDice() {
 
 	}
 
-//Bernardo
-public int getLCM(long myNum, int myAnswer) {
-        	Scanner kbd =new Scanner(System.in);
-       		myNum = kbd.nextLong();
-        	myAnswer = 0;
-        	return myMethod(myNum, myAnswer);
+	//Bernardo
+	public int getLCM(long myNum, int myAnswer) {
+			Scanner kbd =new Scanner(System.in);
+			myNum = kbd.nextLong();
+			myAnswer = 0;
+			return myMethod(myNum, myAnswer);
+		}
+
+	    private int myMethod(long myNum, int myAnswer) {
+		for(int i=1;i<Math.sqrt(myNum+1);i++){
+		    if(myNum%i==0){
+			myAnswer += 2;
+			if(myNum/i==i)
+			    myAnswer--;
+		    }
+		}
+		return myAnswer;
+	    }
+
+	//Siababa
+	 public int get (int firstNum, int secondNum){
+
+		Scanner scan = new Scanner(System.in);
+		firstNum = scan.nextInt();
+		while(firstNum-- > 0) {
+		     secondNum = scan.nextInt();
+		}
+		return ((int)Math.pow(2, Integer.bitCount(secondNum)))
 	}
 
-    private int myMethod(long myNum, int myAnswer) {
-        for(int i=1;i<Math.sqrt(myNum+1);i++){
-            if(myNum%i==0){
-                myAnswer += 2;
-                if(myNum/i==i)
-                    myAnswer--;
-            }
-        }
-        return myAnswer;
-    }
+	//Bernardo
 
-//Siababa
- public int get (int firstNum, int secondNum){
+	 import java.util.Scanner;
 
-        Scanner scan = new Scanner(System.in);
-        firstNum = scan.nextInt();
-        while(firstNum-- > 0) {
-             secondNum = scan.nextInt();
-        }
-        return ((int)Math.pow(2, Integer.bitCount(secondNum)))
-}
-
-//Bernardo
-
- import java.util.Scanner;
-
- public int getLCM(long firstNum, int answer) {
-       Scanner cin =new Scanner(System.in);
-       firstNum = cin.nextLong();
-       answer = 0;
-       for(int i=1;i<Math.sqrt(firstNum+1);i++){
-       	  if(firstNum%i==0){
-          answer += 2;
-          if(firstNum/i==i) 
-          answer--;
-	  }
-      }   
-      return answer;
-}
-
-//Fernandez
-public String getDivisible(int firstNum, int secondNum, int thirdNum) {
-	Scanner sc = new Scanner(System.in);
-	firstNum = sc.nextInt();
-	for(;firstNum>0;firstNum-=1) {
-	    secondNum = sc.nextInt();
-	    thirdNum = sc.nextInt();
+	 public int getLCM(long firstNum, int answer) {
+	       Scanner cin =new Scanner(System.in);
+	       firstNum = cin.nextLong();
+	       answer = 0;
+	       for(int i=1;i<Math.sqrt(firstNum+1);i++){
+		  if(firstNum%i==0){
+		  answer += 2;
+		  if(firstNum/i==i) 
+		  answer--;
+		  }
+	      }   
+	      return answer;
 	}
-      	return (secondNum+" "+2*secondNum);
-}
+
+	//Fernandez
+	public String getDivisible(int firstNum, int secondNum, int thirdNum) {
+		Scanner sc = new Scanner(System.in);
+		firstNum = sc.nextInt();
+		for(;firstNum>0;firstNum-=1) {
+		    secondNum = sc.nextInt();
+		    thirdNum = sc.nextInt();
+		}
+		return (secondNum+" "+2*secondNum);
+	}
