@@ -107,10 +107,10 @@ public class Solutions {
 
 public int rollingDice() {
         Random integer = null;
-	int one = 0;
+	int num = 0;
 	int goal = 0;
         n = integer.nextInt();
-        for (int i = 0; i < n; one++) {
+        for (int num = 0; i < n; num++) {
             goal = integer.nextInt();
         }
         return goal / 2;
