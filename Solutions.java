@@ -5,14 +5,14 @@ public class Solutions {
 		Scanner scanner = new Scanner(System.in);
 		int numjumps = scanner.nextInt();
 		for(int i = 0; i < numjumps; i++) {
-	    	    r = scanner.nextInt();
-	    	    l = scanner.nextInt();
-	    	    y = scanner.nextInt();
+	    	    a = scanner.nextInt();
+	    	    b = scanner.nextInt();
+	    	    c = scanner.nextInt();
 	        }
-        	if (y%2==0) {
-                   return ((r-l)*(y/2));
+        	if (c%2==0) {
+                   return ((a-b)*(c/2));
 		} else { 
-           	   return ((r-l)*((y-1)/2)+r);
+           	   return ((a-b)*((c-b)/2)+a);
                 }
 
           }
