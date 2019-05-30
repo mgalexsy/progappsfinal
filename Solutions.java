@@ -115,19 +115,21 @@ public int rollingDice(int n, int goal) {
     }
 
 //Siababa
-public class Solutios{
 public int get (int firstNum, int secondNum){
-    secondNum = getInteger(secondNum);
-    return ((int)Math.pow(2, Integer.bitCount(secondNum)));
+
+        secondNum = GetInteger(secondNum);
+       
+        return ((int)Math.pow(2, Integer.bitCount(secondNum)));
     }
-    public int getInteger(int secondNum) {
-        int firstNum;
+
+    public int GetInteger(int mysecondNum) {
+        int myfirstNum;
         Scanner scan = new Scanner(System.in);
-        firstNum = scan.nextInt();
-        while(firstNum-- > 0) {
-            secondNum = scan.nextInt();
+        myfirstNum = scan.nextInt();
+        while(myfirstNum-- > 0) {
+            mysecondNum = scan.nextInt();
         }
-        return secondNum;
+        return mysecondNum;
     }
     
 }
@@ -149,21 +151,6 @@ public int getLCM(long myNum, int myAnswer) {
             }
         }
         return myAnswer;
-    }
-//Fernandez
- public String getDivisible(int t, int r, int l) {
-      		return isDivisible(t, r);
-    }
-
-    private String isDivisible(int t, int r) {
-        int l;
-        Scanner sc = new Scanner(System.in);
-        t = sc.nextInt();
-        for(;t>0;t-=1) {
-            r = sc.nextInt();
-            l = sc.nextInt();
-        }
-        return (r+" "+2*r);
     }
 
 //Siababa
