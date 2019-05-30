@@ -75,18 +75,18 @@ public class Solutions {
       }
 
 	   //Cayadi
-    public String ThanosNim (int n, int[] a, int min, int minCount){
+    public String ThanosNim (int n, int[] a, int b, int minCount){
        Scanner kbd = new Scanner(System.in);
        n = kbd.nextInt();
        a = new int[n];
-       min = 51;
+       b = 51;
        minCount = 0;
        for (int i = 0; i < n; i++) {
            a[i] = kbd.nextInt();
-           min = Math.min(min, a[i]);
+           b = Math.b(b, a[i]);
        }
        for (int i = 0; i < n; i++) {
-           if (a[i] == min) {
+           if (a[i] == b) {
                minCount++;
            }
        }
