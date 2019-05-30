@@ -1,55 +1,21 @@
 import java.util.*;
 public class Solutions {
 	//Alejo
-	    public int jumpingFrog(int a, int b, int c)  {
+	   public int jumpingFrog(int r, int l, int y)  {
 		Scanner scanner = new Scanner(System.in);
-		int numjumps = numjumps(scanner);
-		for(int i = 0; i < numjumps; i++) {
-	    	    a = a(scanner);
-	    	    b = b(scanner);
-	    	    c = c(scanner);
+		int x = scanner.nextInt();
+		for(int i = 0; i < x; i++) {
+	    	    r = scanner.nextInt();
+	    	    l = scanner.nextInt();
+	    	    y = scanner.nextInt();
 	        }
-        return forJumpingFrog(c, a, b);
+        	if (y%2==0) {
+                   return ((r-l)*(y/2));
+		} else { 
+           	   return ((r-l)*((y-1)/2)+r);
+                }
 
           }
-
-    public int numjumps(Scanner scanner) {
-        int numjumps = scanner.nextInt();
-        return numjumps;
-    }
-
-    public int c(Scanner scanner) {
-        int c;
-        c = scanner.nextInt();
-        return c;
-    }
-
-    public int b(Scanner scanner) {
-        int b;
-        b = scanner.nextInt();
-        return b;
-    }
-
-    public int a(Scanner scanner) {
-        int a;
-        a = scanner.nextInt();
-        return a;
-    }
-
-    public int forJumpingFrog(int c, int a, int b) {
-        return ifjumpingFrog(c, a, b);
-    }
-
-    public int ifjumpingFrog(int c, int a, int b) {
-        if (c%2==0) {
-            return ((a-b)*(c/2));
-        } else {
-            return ((a-b)*((c-b)/2)+a);
-        }
-    }
-  
-    }
-  
 
 	//Siababa
     	public int get (int firstNum, int secondNum){
