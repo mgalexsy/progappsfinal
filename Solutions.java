@@ -139,6 +139,8 @@ public int rollingDice() {
 		}
 		return (secondNum+" "+2*secondNum);
 	}
+	
+	//Cayadi
 	public int getRemainder (){
         	Scanner sc=new Scanner(System.in);
         	int firstInput=sc.nextInt();
