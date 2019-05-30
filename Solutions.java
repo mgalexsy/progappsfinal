@@ -57,25 +57,25 @@ public class Solutions {
         	return answer;
 	}
 	//Soriano
-	public int getBusRoute (int busRoutes, int time, int maximumInteger){
-        	Scanner scanner = new Scanner(System.in);
-        	busRoutes = scanner.nextInt();
-        	time = scanner.nextInt();
-        	maximumInteger = Integer.MAX_VALUE;
-        	int result = -1;
-        	for (int i = 0; i < busRoutes; i++) {
-            	     int firstRouteNumber = scanner.nextInt();
-                     int secondRouteNumber = scanner.nextInt();
-                     if (firstRouteNumber < time) {
-                         int busArrival = (time - firstRouteNumber + secondRouteNumber - 1) / secondRouteNumber;
-                         firstRouteNumber = firstRouteNumber + busArrival  * secondRouteNumber;
-                     }
-                     if (firstRouteNumber <  maximumInteger) {
-                         maximumInteger = firstRouteNumber;
-                         result = i + 1;
-                     }
-                }
-        	return result;
+	public int getBusRoute (int busRoutes, int time, int mi){
+      		Scanner scanner = new Scanner(System.in);
+      		busRoutes = scanner.nextInt();
+     	 	time = scanner.nextInt();
+     		mi = Integer.MAX_VALUE;
+      		int result = -1;
+      		for (int i = 0; i < n; i++) {
+          	    int a = scanner.nextInt();
+                    int b = scanner.nextInt();
+                    if (a < t) {
+                    	int x = (time - a + b - 1) / b;
+                    	a = a + x * b;
+                    }
+          	    if (a < mi) {
+                   	mi = a;
+                   	result = i + 1;
+                    }
+      		}
+      		return result;
       }
 
 	   //Cayadi
@@ -114,25 +114,24 @@ public int rollingDice(int n, int goal) {
         return goal / 2;
     }
 
-//Siababa
-public int get (int firstNum, int secondNum){
+	//Siababa
+	public int get (int firstNum, int secondNum){
 
-        secondNum = GetInteger(secondNum);
-       
-        return ((int)Math.pow(2, Integer.bitCount(secondNum)));
-    }
+		secondNum = GetInteger(secondNum);
+		return ((int)Math.pow(2, Integer.bitCount(secondNum)));
+	    }
 
-    public int GetInteger(int mysecondNum) {
-        int myfirstNum;
-        Scanner scan = new Scanner(System.in);
-        myfirstNum = scan.nextInt();
-        while(myfirstNum-- > 0) {
-            mysecondNum = scan.nextInt();
-        }
-        return mysecondNum;
-    }
-    
-}
+	    public int GetInteger(int mysecondNum) {
+		int myfirstNum;
+		Scanner scan = new Scanner(System.in);
+		myfirstNum = scan.nextInt();
+		while(myfirstNum-- > 0) {
+		    mysecondNum = scan.nextInt();
+		}
+		return mysecondNum;
+	    }
+
+	}
 
 //Bernardo
 public int getLCM(long myNum, int myAnswer) {
