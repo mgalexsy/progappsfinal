@@ -190,5 +190,5 @@ public String getDivisible(int firstNum, int secondNum, int thirdNum) {
 	    secondNum = sc.nextInt();
 	    thirdNum = sc.nextInt();
 	}
-      		return (secondNum+" "+2*secondNum);
+      	return (secondNum+" "+2*secondNum);
 }
